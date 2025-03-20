@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket Editor</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 300px; padding: 10px; }
+        label, textarea, input { width: 100%; margin-bottom: 10px; }
+        textarea { height: 100px; }
+        button { width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #45a049; }
+    </style>
+</head>
+<body>
+<h2>Edit Ticket</h2>
+<label for="title">Title:</label>
+<input type="text" id="title">
+
+<label for="description">Description:</label>
+<textarea id="description"></textarea>
+
+<label for="timeSpent">Time Spent:</label>
+<input id="timeSpent">
+
+<label for="ticketDate">Ticket date:</label>
+<input id="ticketDate">
+
+<button id="send">Send to API</button>
+
+<script src="popup.js"></script>
+</body>
+</html>
